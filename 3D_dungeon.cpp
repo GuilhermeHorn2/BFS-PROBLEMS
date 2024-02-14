@@ -21,7 +21,7 @@ int main()
  std::vector<std::vector<char>> grid = {a, b, c, d, e};
  std::vector<std::vector<std::vector<char>>> dg = {grid};
 
- std::cout << has_path(dg, 0, 0, 0);
+ std::cout << has_path(dg, 0, 0, 0) + 1;
 
  return 0;
 }
