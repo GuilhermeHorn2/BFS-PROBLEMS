@@ -70,7 +70,7 @@ int has_path(std::vector<std::vector<std::vector<char>>> &dg, int x, int y, int 
 
   if (dg[a][b][c] == 'E')
   {
-   return lvls[a][b][c] + 1;
+   return lvls[a][b][c];
   }
 
   std::vector<int> d_i = {0, 0, +1, -1, 0, 0};
@@ -93,7 +93,7 @@ int has_path(std::vector<std::vector<std::vector<char>>> &dg, int x, int y, int 
       {
        if (dg[i][j][k] == 'E')
        {
-        return lvls[a][b][c] + 1;
+        return lvls[a][b][c];
        }
        if (dg[i][j][k] != 'E' || dg[i][j][k] != 'S')
        {
